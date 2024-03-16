@@ -1,39 +1,25 @@
-num = int(input('Digite um numero: '))
-metade = num // 2
+n = int(input('Digite um numero: '))
+
+a = (n * 2)
+
 
 # 1a metade
-for lin in range(1, num, +1):
+for i in range(1, n + 1):
     
-    # Imprimir -
-    print(' ' * (lin-1), end="")
+    a = a - 2
 
-    # Imprimir O
-    print('*', end="")
-
-    # Imprimir -
-    print('-' * ((num * 2) - lin), end="")
-
-    # Imprimir O
+    print(' ' * (i - 1), end='')
+    print('*', end='')
+    print(' ' * a, end='')
     print('*')
 
-# Qdo a qtd de linhas for impar
-if (num%2 != 0):
-    # Imprimir -
-    print("-" * (metade), end="")
-    # Imprimir O
-    print("O")
-
 # 2a metade
-for lin in range(metade, 0, -1):
+for i in range(n - 1, 0, -1):
+   
+    a += 2
+   
     
-    # Imprimir -
-    print('-' * (lin-1), end="")
-
-    # Imprimir O
-    print('O', end="")
-
-    # Imprimir -
-    print('-' * (num - (2*lin)), end="")
-
-    # Imprimir O
-    print('O')
+    print(' ' * (i - 1), end='')
+    print('*', end='')
+    print(' ' * a, end='')
+    print('*')

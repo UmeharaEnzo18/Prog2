@@ -1,3 +1,4 @@
+#Same as "ex9.py"
 n = int(input("Digite um número: "))
 metade = n // 2
 
